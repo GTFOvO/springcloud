@@ -93,4 +93,14 @@ public class PaymentController {
         return serverPort;
     }
 
+    /**
+     * 链路监控
+     *
+     * @return
+     */
+    @GetMapping("zipkin")
+    public String paymentZipkin() {
+        return "hi,i`am paymentzipkin server fall back.welcome to Matthias.hahahahahhahahah";
+    }
+
 }
