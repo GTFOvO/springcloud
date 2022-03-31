@@ -13,6 +13,7 @@
         <module name="cloud-provide-hystrix-dashboard9001" />
         <module name="cloud-provide-payment8001" />
         <module name="cloud-eureka-server7002" />
+        <module name="seata-order-service2001" />
         <module name="cloudalibaba-consumer-nacos-order84" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-stream-rabbitmq-provider8801" />
@@ -31,6 +32,8 @@
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloudalibaba-consumer-nacos-order83" />
+        <module name="seata-account-service2003" />
+        <module name="seata-storage-service2002" />
         <module name="cloud-provide-hystrix-payment8001" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provide-payment8006" />
@@ -69,6 +72,9 @@
       <module name="cloudalibaba-provider-payment9004" target="1.8" />
       <module name="cloudalibaba-sentinel-service8401" target="1.8" />
       <module name="com.matthias.client-3355" target="1.5" />
+      <module name="seata-account-service2003" target="1.8" />
+      <module name="seata-order-service2001" target="1.8" />
+      <module name="seata-storage-service2002" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
