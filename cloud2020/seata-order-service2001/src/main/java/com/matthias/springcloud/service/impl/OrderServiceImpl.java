@@ -5,6 +5,7 @@ import com.matthias.springcloud.domain.OrderDomain;
 import com.matthias.springcloud.service.AccountService;
 import com.matthias.springcloud.service.OrderService;
 import com.matthias.springcloud.service.StorageService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,7 @@ public class OrderServiceImpl implements OrderService {
 
 
     @Override
+    @GlobalTransactional(name = "orderTransactional", rollbackFor = Exception.class)
     public void create(OrderDomain orderDomain) {
         log.info("================>>>开始创建订单");
         orderDao.create(orderDomain);
